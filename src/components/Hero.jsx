@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <div>
+    <div className='bg-gray-100'>
       <h1>hello</h1>
       <h1>hello</h1>
       <h1>hello</h1>
