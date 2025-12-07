@@ -1,1 +1,11 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "Rosca";
+  src: url("./assets/fonts/rosca.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-rosca {
+    font-family: "Rosca", sans-serif;
+}
