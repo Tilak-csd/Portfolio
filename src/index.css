@@ -9,3 +9,15 @@
 .font-rosca {
     font-family: "Rosca", sans-serif;
 }
+
+@keyframes fadeIn {
+    from{
+        opacity: 0%;
+    }to{
+        opacity: 100%;
+    }
+}
+
+.animate-fade-in{
+    animation: fadeIn 0.5s ease-out forwards;
+}
