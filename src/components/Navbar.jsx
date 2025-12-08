@@ -25,7 +25,7 @@ export default function Navbar() {
         <div className='hidden relative md:flex justify-center items-center gap-3 h-full rounded-b-sm bg-gray-100 px-5 rounded-t-3xl'>
           <NavLink />
         </div>
-        <button className='hidden md:block px-2 py-1 font-sans rounded-md text-sm hover:text-gray-300 hover: bg-black w-auto cursor-pointer text-md text-white'>Contact</button>
+        <button className='hidden md:block px-2 py-1 font-sans rounded-md text-md hover:text-gray-300 hover: bg-black w-auto cursor-pointer text-md text-white'>Contact</button>
       </div>
       {/* Mobile Menu behind navbar */}
       <div
