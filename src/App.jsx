@@ -6,11 +6,11 @@ import SideSocailmedia from './components/SideSocailmedia'
 function App() {
 
   return (
-    <div>
+    <>
       <SideSocailmedia />
       <Navbar />
       <Hero />
-    </div>
+    </>
   )
 }
 
