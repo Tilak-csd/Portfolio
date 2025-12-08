@@ -18,14 +18,21 @@ export default function Navbar() {
   return (
     <div className="relative">
       {/* Navbar itself */}
-      <div className="relative flex justify-between items-center h-[60px] md:h-12 w-full px-4 border-b md:border-0 border-gray-200 z-20 bg-white">
-        <p className="font-rosca text-xl">Tilak Gubhaju</p>
-        {open ? ( <CloseMenu setOpen={setOpen} /> ) : ( <OpenMenu setOpen={setOpen} /> )}
+      <div className="relative flex justify-between items-center h-[60px] md:h-12 w-full md:px-6 px-4 border-b md:border-0 border-gray-200 z-20 bg-white">
+        <p className="font-rosca text-xl  md:text-2xl">Tilak Gubhaju</p>
+        {open ? (<CloseMenu setOpen={setOpen} />) : (<OpenMenu setOpen={setOpen} />)}
         {/* Desktop Menu Navbar */}
-        <div className='hidden relative md:flex justify-center items-center gap-3 h-full rounded-b-sm bg-gray-100 px-5 rounded-t-3xl'>
+        <div className='hidden relative md:flex justify-center items-center gap-3 h-full bg-gray-200 px-5 rounded-t-xl'>
           <NavLink />
         </div>
-        <button className='hidden md:block px-2 py-1 font-sans rounded-md text-md hover:text-gray-300 hover: bg-black w-auto cursor-pointer text-md text-white'>Contact</button>
+        <a href="" className='relative flex justify-center items-center '>
+          Book a call
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5 w-4 h-4">
+            <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
+          </svg>
+          <span class="absolute bottom-0 left-0 h-0.5 w-[80%] bg-black"></span>
+
+        </a>
       </div>
       {/* Mobile Menu behind navbar */}
       <div
@@ -40,7 +47,7 @@ export default function Navbar() {
 
 function NavLink() {
   return (
-    <ul className="flex flex-col justify-center items-center gap-5 font-sans text-sm md:flex-row md:h-[full]  ">
+    <ul className="flex flex-col justify-center items-center gap-5 font-sans text-md md:flex-row md:h-[full]  ">
       <li className=""><a href="#" class="group relative text-black transition duration-300">
         Home
         <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-black transition-all duration-300 group-hover:w-full"></span>

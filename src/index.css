@@ -25,4 +25,10 @@
 html, body{
     padding: 0;
     margin: 0;
+    outline:none;
+}
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
 }
