@@ -18,7 +18,8 @@ export default function Navbar() {
   return (
     <div className="relative">
       {/* Navbar itself */}
-      <div className="relative flex justify-between items-center h-[60px] w-full px-4 border-b md:border-0 border-gray-200 z-20 bg-white">
+      <div className="relative flex justify-between items-center h-[60px] md:h-12 w-full px-4 border-b md:border-0 border-gray-200 z-20 bg-white">
+        
         <p className="font-rosca text-xl">Tilak Gubhaju</p>
         {open ? (
           <CloseMenu setOpen={setOpen} />
@@ -27,10 +28,10 @@ export default function Navbar() {
         )}
 
         {/* Desktop Menu Navbar */}
-        <div className='hidden md:flex justify-center items-center gap-3 h-full rounded-b-sm bg-gray-100 px-5 rounded-t-3xl'>
+        <div className='hidden relative md:flex justify-center items-center gap-3 h-full rounded-b-sm bg-gray-100 px-5 rounded-t-3xl'>
           <NavLink />
-          <button className='hidden md:block px-5 py-2 font-sans rounded-2xl hover:text-gray-300 hover: bg-black w-auto cursor-pointer text-md text-white'>Contact</button>
         </div>
+          <button className='hidden md:block px-2 py-1 font-sans rounded-md text-sm hover:text-gray-300 hover: bg-black w-auto cursor-pointer text-md text-white'>Contact</button>
       </div>
 
 
@@ -49,11 +50,28 @@ export default function Navbar() {
 
 function NavLink() {
   return (
-    <ul className="flex flex-col justify-center items-center gap-5 font-sans text-md md:flex-row  md:h-full  ">
-      <li className="hover:underline"><a href="/hello">Home</a></li>
-      <li className="hover:underline"><a href="">About</a></li>
-      <li className="hover:underline"><a href="">Projects</a></li>
-      <li className="hover:underline"><a href="#my">Testimonial</a></li>
+    <ul className="flex flex-col justify-center items-center gap-5 font-sans text-sm md:flex-row  md:h-[full]  ">
+      <li className=""><a href="#" class="group relative text-black transition duration-300">
+        Home
+        <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      </li>
+      <li className=""><a href="#" class="group relative text-black transition duration-300">
+        About
+        <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      </li>
+      <li className=""><a href="#" class="group relative text-black transition duration-300">
+        Projects
+        <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      </li>
+      <li className=""><a href="#" class="group relative text-black transition duration-300">
+        Testomonial
+        <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      </li>
+      
     </ul>
   );
 }
