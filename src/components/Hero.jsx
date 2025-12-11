@@ -69,6 +69,6 @@ function ThirdComponent() {
 
 function FourthComponent() {
   return <div className="md:flex justify-center items-center hidden col-span-3 row-span-4 col-start-4 row-start-1 ">
-    <img src="./hero-copy-1.png" alt="" className='w-full h-full' />
+    <img src="./hero-1.png" alt="" className='w-full h-full' />
   </div>
 }
